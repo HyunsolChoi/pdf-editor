@@ -294,7 +294,7 @@ export default function PdfPage({
       const widthScale = maxWidth ? maxWidth / naturalSize.width : null
       const heightScale = maxHeight ? maxHeight / naturalSize.height : null
       const candidates = [widthScale, heightScale].filter((s): s is number => s !== null)
-      if (candidates.length) scale = Math.min(...candidates) * 0.7
+      if (candidates.length) scale = Math.min(...candidates) * 0.95
     }
   }
 
